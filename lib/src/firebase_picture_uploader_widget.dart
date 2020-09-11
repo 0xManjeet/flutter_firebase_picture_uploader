@@ -39,7 +39,7 @@ class PictureUploadLocalization {
 
 class PictureUploadSettings {
   /// Basic settings for PictureUploadWidget
-  const PictureUploadSettings(
+   PictureUploadSettings(
       {this.uploadDirectory = '/Uploads/',
       this.imageSource = ImageSourceExtended.gallery,
       this.customUploadFunction,
@@ -142,12 +142,12 @@ class PictureUploadWidget extends StatefulWidget {
   /// which is used to select an image. The selected image can be manipulated and is uploaded afterwards.
   PictureUploadWidget(
       {@required this.onPicturesChange,
-      this.settings = const PictureUploadSettings(),
+      PictureUploadSettings settings,
       this.initialImages,
       this.buttonText = 'Upload Picture',
       this.buttonStyle = const PictureUploadButtonStyle(),
       this.localization = const PictureUploadLocalization(),
-      this.enabled = true});
+      this.enabled = true}):settings=settings ?? PictureUploadSettings();
 
   /// Function is called after an image is uploaded, the the UploadJob as parameter
   final Function onPicturesChange;
