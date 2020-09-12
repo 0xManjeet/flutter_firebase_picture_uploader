@@ -650,11 +650,7 @@ class UploadJob {
         _storageReference.path != null &&
         _storageReference.path != '') {
       final String fileName = _storageReference.path.split('/').last;
-
-      // The filename mist be like custom1_..._custom_x_id_customy.(jpg|png|...)
-      final List<String> fileParts = fileName.split('_');
-      final String id = fileParts[fileParts.length - 2];
-      this.id = int.parse(id);
+      id = int.parse(fileName.split('.').first);
     }
   }
 
