@@ -68,7 +68,7 @@ class FirebasePictureUploadController {
       String uploadDirectory,
       int id,
       Function imagePostProcessingFuction) async {
-    final String uploadPath = '$uploadDirectory${id.toString()}_800.jpg';
+    final String uploadPath = '$uploadDirectory${id.toString()}.jpg';
     final StorageReference imgRef =
         FirebaseStorage.instance.ref().child(uploadPath);
 

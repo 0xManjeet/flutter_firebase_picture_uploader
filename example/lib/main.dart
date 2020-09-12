@@ -42,7 +42,7 @@ class _MyHomeState extends State<MyHome> {
             onPicturesChange: profilePictureCallback,
             buttonStyle: const PictureUploadButtonStyle(),
             buttonText: 'Upload Picture',
-            settings: const PictureUploadSettings(
+            settings:  PictureUploadSettings(
                 // customDeleteFunction: ProfileController.deleteProfilePicture,
                 // customUploadFunction: RecipeController.uploadRecipePicture,
                 imageSource: ImageSourceExtended.askUser,

@@ -101,7 +101,7 @@ class PictureUploadButtonStyle {
     this.iconData = CupertinoIcons.photo_camera,
     this.iconSize = 40.0,
     this.backgroundColor = CupertinoColors.systemBlue,
-    this.width = 80,
+    this.width = 100,
     this.height = 100,
     this.fontColor = CupertinoColors.white,
     this.fontSize = 14.0,
