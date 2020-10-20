@@ -77,7 +77,7 @@ class PictureUploadSettings {
 class ImageManipulationSettings {
   /// The settings how the image shall be modified before upload
   const ImageManipulationSettings(
-      {this.aspectRatio = const CropAspectRatio(ratioX: 1.0, ratioY: 1.0),
+      {this.aspectRatio,// = const CropAspectRatio(ratioX: 1.0, ratioY: 1.0),
       this.maxWidth = 800,
       this.maxHeight = 800,
       this.compressQuality = 75});
